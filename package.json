@@ -1,0 +1,26 @@
+{
+  "name": "ng-tabs",
+  "version": "0.0.1",
+  "description": "Build tabbed apps in AngularJS",
+  "main": "ng-tabs.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jayralencar/ng-tabs.git"
+  },
+  "keywords": [
+    "angularjs",
+    "tabs"
+  ],
+  "author": "Jayr Alencar (jayralencar.com.br)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/jayralencar/ng-tabs/issues"
+  },
+  "homepage": "https://github.com/jayralencar/ng-tabs#readme",
+  "devDependencies":{
+    "angular":"latest"
+  }
+}

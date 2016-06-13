@@ -30,9 +30,18 @@ ngTabs.provider('$Tabs',function(){
 	return this;
 });
 
+ngTabs.controller('ngTabsController', function($scope, $Tabs){
+	$scope.initTabs = function(){
+		console.log($Tabs.tabs)
+		$scope.tabs = $Tabs.tabs;
+	}
+});
+
 ngTabs.directive('navTabs',function (){
 	return{
 		restrict: "AE",
+		controller: "ngTabsController",
+		template: '<ul ng-init="initTabs()" class="nav nav-tabs" role="tablist"> <li ng-repeat="tab in tabs">tab.name</li> </ul>',
 		link: function(scope, elemt, attrs){
 			var tabsClass = attrs.tabsClass || '';
 		}
